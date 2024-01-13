@@ -1,0 +1,33 @@
+package main
+
+templ colorPalette() {
+    <h4>Background Palette</h4>
+    <div class="colorPalette">
+        <div style="background-color:var(--bg-lightest)"></div>
+        <div style="background-color:var(--bg-lighter)"></div>
+        <div style="background-color:var(--bg-light)"></div>
+        <div style="background-color:var(--bg)"></div>
+        <div style="background-color:var(--bg-dark)"></div>
+        <div style="background-color:var(--bg-darker)"></div>
+        <div style="background-color:var(--bg-darkest)"></div>
+    </div>
+}
+
+templ index(name string) {
+    <!DOCTYPE html>
+    <html>
+        <head>
+            <title>
+                Test title
+            </title>
+            <link rel="stylesheet" href="/styles/globals.css"/>
+            <link rel="preconnect" href="https://fonts.googleapis.com"/>
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+            <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet"/>
+        </head>
+        <body>
+            Test body {name}
+            @colorPalette()
+        </body>
+    </html>
+}

@@ -1,0 +1,70 @@
+:root {
+    --bg-lightest: hsl(232, 11%, 15%);
+    --bg-lighter: hsl(232, 11%, 12%);
+    --bg-light: hsl(232, 11%, 10%);
+    --bg: hsl(232, 11%, 8%);
+    --bg-dark: hsl(232, 11%, 5%);
+    --bg-darker: hsl(232, 11%, 4%);
+    --bg-darkest: hsl(232, 11%, 0%);
+
+    --text: #efefef;
+
+    --h1: 3rem;
+    --h2: 2rem;
+    --h3: 1.5rem;
+    --h4: 1.25rem;
+    --h5: 1.1rem;
+    --h6: 1rem;
+
+    background-color: var(--bg);
+    color: var(--text);
+
+    font-family: 'Ubuntu', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: inherit;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+h1 {
+    font-size: var(--h1);
+}
+
+h2 {
+    font-size: var(--h2);
+}
+
+h3 {
+    font-size: var(--h3);
+}
+
+h4 {
+    font-size: var(--h4);
+}
+
+h5 {
+    font-size: var(--h5);
+}
+
+h6 {
+    font-size: var(--h6);
+}
+
+.colorPalette {
+    width: 100%;
+    display: flex;
+    height: 4em;
+}
+
+.colorPalette > * {
+    width: 100%;
+}
